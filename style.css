@@ -23,10 +23,11 @@ body {
 
 a, a:visited {
     color: var(--primary-foreground-color);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 a:hover, a:active, a:focus {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-decoration: none;
 }
 
 .button {
@@ -112,6 +113,27 @@ footer {
     width: 50%;
 }
 
+.project-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.project-meta {
+    justify-content: center;
+    gap: 1.8em;
+    padding: 1.2em;
+}
+
+.projet-testimonial-name {
+    font-size: 0.9rem;
+}
+
+img {
+    height: 200px;
+}
+
+/* Utils */
+
 .border {
     border: 1px solid var(--primary-foreground-color);
 }
@@ -151,6 +173,23 @@ footer {
 
 .font-weight-900 {
     font-weight: 900;
+}
+
+.flex {
+    display: flex;
+}
+
+.max-width-ch {
+    max-width: 75ch;
+}
+
+.padding-1em {
+    padding: 1em;
+}
+
+.magrin-tb-half-em {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* Media Queries */

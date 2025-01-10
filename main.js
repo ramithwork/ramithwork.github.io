@@ -19,4 +19,5 @@ const years = new Date().getFullYear() - 2002
 yearsSpan.textContent = years
 
 // Copyright year
-let copyrightYearSpan = document.getElementById('copyright-year').textContent = new Date().getFullYear()
+// let copyrightYearSpan = document.getElementById('copyright-year').textContent = new Date().getFullYear()
+document.getElementById('copyright-year').textContent = new Date().getFullYear()
