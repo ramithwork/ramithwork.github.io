@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-font: monospace;
+    --heading-font: "Voltaire", serif;
+    --primary-foreground-color: #fff;
+    --primary-background-color: #000;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--primary-background-color);
+    color: var(--primary-foreground-color);
+    /* height: 100vh; */
+    flex-direction: column;
+}
+
+a, a:visited {
+    color: var(--primary-foreground-color);
+    text-decoration: none;
+}
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: var(--primary-background-color);
+    color: var(--primary-foreground-color);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover, .button:active, .button:focus {
+    background-color: var(--primary-foreground-color);
+    color: var(--primary-background-color);
+}
+
+header {
+    margin: 1em 0.5em;
+}
+
+.name {
+    letter-spacing: 0.2em;
+}
+
+/* Currently hidden */
+ul {
+    display: flex;
+    list-style: none;
+    display: none;
+}
+
+ul li {
+    margin: 0 1em;
+}
+
+/* .main {
+    height: 100%;
+} */
+
+.hero {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 18vw;
+}
+
+.boxes {
+    /* Commented code below seems unnessary. 'flex-space-between' class wasn't added to boxes. */
+    /* display: flex;
+    justify-content: space-between; */
+    /* flex-direction: column; */
+    width: 50%;
+}
+
+.row1, .row2 {
+    height: 50%;
+}
+
+.box {
+    width: 100%;
+}
+
+.box-title {
+    font-size: 1.5rem;
+}
+
+.about, .projects, .web, .design {
+    padding: 1em;
+}
+
+footer {
+    padding: 2em 1em 1em 1em;
+}
+
+.copyright {
+    font-size: 0.6rem;
+}
+
+.brief-about {
+    width: 50%;
+}
+
+.border {
+    border: 1px solid var(--primary-foreground-color);
+}
+
+.border-top-none {
+    border-top: none;
+}
+
+.border-bottom-none {
+    border-bottom: none;
+}
+
+.border-left-none {
+    border-left: none;
+}
+
+.border-right-none {
+    border-right: none;
+}
+
+.heading-font {
+    font-family: var(--heading-font);
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-size-p8 {
+    font-size: 0.8rem;
+}
+
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+/* Media Queries */
+@media (min-width: 1440px) {
+   .name {
+    font-size: 1.5rem;
+   }
+   .box {
+    font-size: 1.7rem;
+   }
+   .box-title {
+    font-size: 2.8rem;
+   }
+}
+
+@media (max-width: 2575px) {
+    .box {
+        font-size: 1.5rem;
+       }
+}
+
+@media (max-width: 2250px) {
+    .box {
+        font-size: 1.3rem;
+       }
+}
+
+@media (max-width: 1950px) {
+    .box {
+        font-size: 1.2rem;
+       }
+    /* .main {
+        height: 100%;
+    } */
+}
+
+@media (max-width: 1790px) {
+    .box {
+        font-size: 1rem;
+       }
+    /* .main {
+        height: auto;
+    } */
+}
+
+@media (max-width: 1600px) {
+    .box {
+        font-size: 0.8rem;
+       }
+}
+
+@media (max-width: 1215px) {
+    .main {
+        flex-direction: column;
+    }
+    .hero {
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .boxes {
+        width: 100%;
+    }
+    .row1, .row2 {
+        height: auto;
+    }
+    .about {
+        border: none;
+        border-top: 1px solid var(--primary-foreground-color);
+    }
+    .projects {
+        border-bottom: none;
+    }
+    .web {
+        border: none;
+        border-top: 1px solid var(--primary-foreground-color);
+    }
+    .design {
+        border-bottom: none;
+    }
+    .brief-about {
+        width: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    footer {
+        flex-direction: column;
+    }
+    .copyright {
+        margin-top: 1em;
+    }
+    .row1, .row2 {
+        flex-direction: column;
+    }
+    .projects {
+        border-left: none;
+    }
+    .design {
+        border-left: none;
+    }
+}
